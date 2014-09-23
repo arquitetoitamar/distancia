@@ -12,12 +12,12 @@ public class ConnectionFactory {
 	private static final String USER = "javatech_prova"; // usuario do database
 	private static final String PASSWORD = "123iop"; // senha do database
 
-	private static final String IP = "174.142.9.225";
+	private static final String IP = "javatechbrasil.com.br";
 
 	private static final String DATABASE = "javatech_prova";
 
 	private static final String STR_CON = "jdbc:mysql://" + IP + ":3306/"
-			+ DATABASE;
+			+ DATABASE+"?noAccessToProcedureBodies=true";
 
 	public static Connection getConexao() throws SQLException {
 		Connection conn = null;
